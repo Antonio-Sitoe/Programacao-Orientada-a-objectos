@@ -15,4 +15,9 @@ public class ContaOrdem extends Conta{
 	public String toString() {
 		return "Saldo: "+super.saldo;
 	}
+
+	public double calculaSaldoReal(){
+		double saldoReal = super.saldo + (super.saldo * 1) / 100;
+		return saldoReal;
+	}
 }

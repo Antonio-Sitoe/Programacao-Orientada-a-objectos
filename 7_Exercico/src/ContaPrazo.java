@@ -11,6 +11,11 @@ public class ContaPrazo extends Conta{
 	
 	
 	public String toString() {
-		return "Saldo: "+super.saldo;
+		return "Saldo: "+ super.saldo;
+	}
+
+	public double calculaSaldoReal(){
+		double saldoReal = super.saldo - (super.saldo * 3) / 100;
+		return saldoReal;
 	}
 }

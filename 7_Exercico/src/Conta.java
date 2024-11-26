@@ -1,5 +1,5 @@
 
-public class Conta {
+public abstract class  Conta {
 	protected int numero;
 	protected String titular;
 	protected double saldo;
@@ -29,8 +29,6 @@ public class Conta {
 		return saldo;
 	}
 	
-	public void depositar(double valor) {
-		this.saldo += valor;
-	}
-	
+	public abstract void depositar(double valor);
+	public abstract double calculaSaldoReal();
 }
